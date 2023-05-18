@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <h1 style="margin-top: 30px;">ENREGISTREMENT</h1>
+    <div class="register">
+        <form action="">
+            <div class="register__column">
+                <label for="lname">Nom</label>
+                <input type="text" name="fname" id="fname" />
+            </div>
+
+            <div class="register__column">
+                <label for="fname">Prénom</label>
+                <input type="text" name="lname" id="lname" />
+            </div>
+
+            <div class="register__column">
+                <label for="birthday">Áge</label>
+                <input type="number" name="birthday" id="birthday" min="10" max="99" />
+            </div>
+
+            <div class="register__column">
+                <label for="profession">Profession</label>
+                <input type="text" name="profession" id="profession" />
+            </div>
+
+            <div>
+                <label for="button" style="visibility: hidden;">S'enregistrer</label>
+                <input type="button" id="submitBtn" value="S'enregistrer">
+
+            </div>
+        </form>
+    </div>
+
+    <h1 style="margin-top: 30px;">LISTE</h1>
+
+    <div class="list">
+        <div class="list__header">
+            <h3>Nom</h3>
+            <h3>Prénom</h3>
+            <h3>Áge</h3>
+            <h3>Profession</h3>
+            <h3>Date</h3>
+        </div>
+
+        <div class="list__output">
+            <p id="outputFirstname"></p>
+            <p id="outputLastname"></p>
+            <p id="outputBirthday"></p>
+            <p id="outputProfession"></p>
+            <p id="outputDate"></p>
+        </div>
+    </div>
+
+    <script src="script2.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Fira Sans", sans-serif;
+    background-color: #e4dee4;
+}
+
+.register {
+    margin-top: 20px;
+    form {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        input {
+            height: 30px;
+            border: 1px solid black;
+            border-radius: 5px;
+            padding-left: 2px;
+        }
+        input[type="text"] {
+            width: 350px;
+        }
+        input[type="number"] {
+            width: 70px;
+        }
+        input[type="button"] {
+            color: black;
+            background-color: #06d6a0;
+            cursor: pointer;
+        }
+    }
+    &__column {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+}
+
+.list {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    &__header,
+    &__output {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 200px;
+    }
+}

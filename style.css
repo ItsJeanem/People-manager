@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Fira Sans", sans-serif;
+  background-color: #e4dee4;
+}
+
+.register {
+  margin-top: 20px;
+}
+.register form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.register form input {
+  height: 30px;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding-left: 2px;
+}
+.register form input[type=text] {
+  width: 350px;
+}
+.register form input[type=number] {
+  width: 70px;
+}
+.register form input[type=button] {
+  color: black;
+  background-color: #06d6a0;
+  cursor: pointer;
+}
+.register__column {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.list {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.list__header, .list__output {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 200px;
+}/*# sourceMappingURL=style.css.map */
